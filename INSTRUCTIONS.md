@@ -6,8 +6,9 @@ Here we describe how to use tuya-cloudcutter to jailbreak Tuya IoT devices by re
 
 ### Prerequisites
 * A laptop or computer with a WiFi adapter
-* Running (non-virtualized) Ubuntu (other distros with NetworkManager might also work, untested. VMs might work if you passthrough WiFi adapter.)
+* Running (non-virtualized) archlinux (other distros with NetworkManager might also work, untested. VMs might work if you passthrough WiFi adapter.)
 * Docker should be installed, and your user should be part of the "docker" group (reboot if you've just installed Docker, to reload the user groups.)
+* NetworkManager should be installed and started, all other network services should be stopped. 
 
 **Note**: the script mentioned below can also be run in interactive mode, i.e. without any parameters, in which the user will be asked to choose one of available options.
 

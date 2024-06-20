@@ -20,7 +20,7 @@ dnsmasq --no-resolv --interface=$WLAN --bind-interfaces --listen-address=$GATEWA
 mkdir /run/mosquitto
 chown mosquitto /run/mosquitto
 echo -e "listener 1883 0.0.0.0\nallow_anonymous true\n" >> /etc/mosquitto/mosquitto.conf
-/usr/sbin/mosquitto -d -c /etc/mosquitto/mosquitto.conf
+/usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf &
 
 rfkill unblock wifi
 
